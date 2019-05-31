@@ -1,10 +1,17 @@
-let katzDeliLine= []
-//
 function takeANumber (katzDeliLine,name){
   katzDeliLine.push(name)
   let msg= `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`
   return msg
 }
+//
+function takeANumerNew (arr){
+  let count=0
+  count++
+  arr.push(count)
+  let msg2= `Welcome, you are number${count} in line`
+  return msg2
+}
+
 //
 //
 function nowServing(katzDeliLine){
@@ -18,6 +25,7 @@ function nowServing(katzDeliLine){
     return servmsg
   }
 }
+//
 //
 //
 function currentLine (katzDeliLine){
